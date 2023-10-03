@@ -20,6 +20,51 @@ footer {
   font: inherit;
   vertical-align: baseline;
 }
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#banner {
+  width: 100%;
+  height: 1066px;
+}
+.unectBanner {
+  background-image: url(./img/time_foto.png);
+  background-size: cover;
+  background-position: center;
+  height: 1066px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(45.83%);
+  overflow: hidden;
+}
+.unectBannerTxt {
+  text-align: center;
+  margin-top: -500px;
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.underlinedTxt {
+  text-decoration: underline;
+  text-underline-offset: 25px;
+  margin-right: 37px;
+  font-family: Ubuntu;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 9px;
+  color: #e0eb4f;
+}
+.bannerTxt {
+  color: #fff;
+}
 #footer {
   height: 584px;
   background-color: #333333;
