@@ -3,6 +3,23 @@
   padding: 0;
   border: 0;
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+div,
+img,
+footer,
+span,
+section,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 body {
   max-width: 100%;
   overflow-x: hidden;
@@ -11,16 +28,6 @@ header {
   background: transparent;
   position: relative;
   z-index: 2;
-}
-footer {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-span {
   margin: 0;
   padding: 0;
   border: 0;
@@ -38,9 +45,220 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+#servicos {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./img/fundo_textura.png);
+  background-size: cover;
+  padding-top: 50px;
+  width: auto;
+  height: 1074px;
+  position: relative;
+}
+#servicos .subtitulo-ns::before {
+  content: url(./img/boda-inferior-subtitulo.svg);
+  position: absolute;
+  left: 80px;
+  top: 170px;
+}
+#servicos .subtitulo-ns::after {
+  content: url(./img/boda-superior-subtitulo.svg);
+  position: absolute;
+  top: 60px;
+  left: 500px;
+}
 #banner {
   width: 100%;
   height: 1066px;
+}
+.container-Cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  height: 700px;
+  column-gap: 30px;
+  margin-top: -58px;
+}
+.container-ns {
+  display: inline-flex;
+  padding: 30px 90px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+}
+.SBotao {
+  width: 495px;
+  height: 89px;
+  border-radius: 20px;
+  background-color: #cfdd19;
+  color: #505c2d;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.5);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.SBotao-txt {
+  color: var(--unect-verde-escuro, #505c2d);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+.cards-ns {
+  width: 360px;
+  height: 475px;
+  border-radius: 20px;
+  background-color: #2377ed;
+  color: #f2f3f4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.5s ease;
+  margin: 0;
+  position: relative;
+}
+.txt1-ns {
+  color: var(--unect-branco, #f2f3f4);
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  position: absolute;
+  margin-bottom: 200px;
+}
+.txt2-ns {
+  color: var(--unect-verde, #cfdd19);
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  margin: 0 15px;
+  position: absolute;
+  margin-top: -80px;
+}
+.txt3-ns {
+  color: var(--unect-branco, #f2f3f4);
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  position: absolute;
+  margin-top: 200px;
+}
+.txt4-ns {
+  color: var(--unect-branco, #f2f3f4);
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  position: absolute;
+  margin-bottom: 160px;
+}
+.txt5-ns {
+  color: var(--unect-verde, #cfdd19);
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  margin: 0 15px;
+  position: absolute;
+  margin-top: -80px;
+}
+.txt6-ns {
+  color: var(--unect-branco, #f2f3f4);
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  position: absolute;
+  margin-top: 220px;
+}
+.s-icon {
+  position: absolute;
+  margin-bottom: 310px;
+}
+.pontoCard {
+  margin-bottom: 4px;
+}
+.linhaCard1 {
+  position: absolute;
+  left: -95px;
+  margin-top: 8px;
+}
+.linhaCard2 {
+  position: absolute;
+  left: 194px;
+  margin-top: 8px;
+}
+.linhaCard3 {
+  position: absolute;
+  left: 0px;
+  margin-top: -78px;
+}
+.linhaCard4 {
+  position: absolute;
+  left: 289px;
+  margin-top: -78px;
+}
+.linhaCard5 {
+  position: absolute;
+  left: -121px;
+  margin-top: 8px;
+}
+.linhaCard6 {
+  position: absolute;
+  left: 168px;
+  margin-top: 8px;
+}
+.div-ns {
+  align-items: flex-start;
+  padding-left: 100px;
+}
+.titulo-ns {
+  font-family: ubuntu;
+  font-size: 24px;
+  font-weight: 500;
+  color: #f2f3f4cc;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.subtitulo-ns {
+  font-family: Nunito;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  padding-bottom: 58px;
+  margin: 0;
 }
 .unectBanner {
   background-image: url(./img/time_foto.png);
@@ -59,7 +277,6 @@ p {
   position: relative;
   font-family: "Ubuntu", sans-serif;
 }
-
 .underlinedTxt {
   text-decoration: underline;
   text-underline-offset: 25px;
@@ -118,7 +335,7 @@ p {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 1px;
-  margin-top: 20px;
+  margin-top: 0;
 }
 .footer-txt3 {
   color: var(--Branco, #fff);
@@ -171,10 +388,49 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 140px;
+  width: 100%;
 }
 .logo {
   padding: 150px;
+}
+.logo-img {
+  width: 80px;
+  height: 98px;
+}
+.bt-whatsapp {
+  width: 50px;
+  height: auto;
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  z-index: 5;
+}
+#bt-topo {
+  position: fixed;
+  bottom: 50px;
+  left: 40px;
+  width: 50px;
+  height: 50px;
+  background-color: #226ed8;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+}
+.arrow {
+  border: solid #f2f3f4;
+  border-width: 0 7px 7px 0;
+  border-radius: 4px;
+  padding: 5px;
+  display: inline-block;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .header {
