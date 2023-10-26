@@ -1,276 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./img/Azul 1.svg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito:wght@700&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UNECT!</title>
-  </head>
-  <body>
-    <header>
-      <div class="bt-whatsapp">
-        <a href="https://wa.me/message/AUAPOPINXWUYJ1" target="_blank">
-          <img src="./img/bt-whatsapp.svg" alt="zapzap" />
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./img/Azul 1.svg" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito:wght@700&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNECT!</title>
+</head>
+
+<body>
+  <header>
+    <div class="bt-whatsapp">
+      <a href="https://wa.me/message/AUAPOPINXWUYJ1" target="_blank">
+        <img src="./img/bt-whatsapp.svg" alt="zapzap" />
+      </a>
+    </div>
+    <div id="bt-topo" style="display: none">
+      <i class="arrow up"></i>
+    </div>
+    <section class="header">
+      <div class="logo">
+        <img class="logo-img" src="./img/logo.png" alt="logo" />
+      </div>
+      <div class="menu">
+        <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+          Início
+        </ul>
+        <a href="#servicos">
+          <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+            Serviços
+          </ul>
+        </a>
+        <a href="#portifolio">
+          <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+            Portfólio
+          </ul>
+        </a>
+        <a href="#sobre-nos">
+          <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+            Sobre Nós
+          </ul>
+        </a>
+        <a href="#contato">
+          <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+            Contato
+          </ul>
         </a>
       </div>
-      <div id="bt-topo" style="display: none">
-        <i class="arrow up"></i>
-      </div>
-      <section class="header">
-        <div class="logo">
-          <img class="logo-img" src="./img/logo.png" alt="logo" />
-        </div>
-        <div class="menu">
-          <ul
-            class="header-text"
-            style="color: rgb(242, 243, 244); text-decoration: none"
-          >
-            Início
-          </ul>
-          <a href="#servicos">
-            <ul
-              class="header-text"
-              style="color: rgb(242, 243, 244); text-decoration: none"
-            >
-              Serviços
-            </ul>
-          </a>
-          <a href="#portifolios">
-            <ul
-              class="header-text"
-              style="color: rgb(242, 243, 244); text-decoration: none"
-            >
-              Portfólio
-            </ul>
-          </a>
-          <a href="#sobre-nos">
-            <ul
-              class="header-text"
-              style="color: rgb(242, 243, 244); text-decoration: none"
-            >
-              Sobre Nós
-            </ul>
-          </a>
-          <a href="#contato">
-            <ul
-              class="header-text"
-              style="color: rgb(242, 243, 244); text-decoration: none"
-            >
-              Contato
-            </ul>
-          </a>
-        </div>
-      </section>
-    </header>
-    <section id="banner">
-      <div class="unectBanner"></div>
-      <div class="unectBannerTxt">
-        <span class="underlinedTxt">
-          <span class="bannerTxt">Construindo</span></span
-        >
-        <span class="underlinedTxt">
-          <span class="bannerTxt">Experiências</span></span
-        >
-      </div>
     </section>
-    <section id="servicos">
-      <div class="div-ns">
-        <p class="titulo-ns">Nossos serviços</p>
-        <p class="subtitulo-ns">
-          Criamos produtos que
-          <br />
-          fazem a diferença
+  </header>
+  <section id="banner">
+    <div class="unectBanner"></div>
+    <div class="unectBannerTxt">
+      <span class="underlinedTxt">
+        <span class="bannerTxt">Construindo</span></span>
+      <span class="underlinedTxt">
+        <span class="bannerTxt">Experiências</span></span>
+    </div>
+  </section>
+  <section id="servicos">
+    <div class="div-ns">
+      <p class="titulo-ns">Nossos serviços</p>
+      <p class="subtitulo-ns">
+        Criamos produtos que
+        <br />
+        fazem a diferença
+      </p>
+    </div>
+    <div class="container-Cards">
+      <div class="cards-ns" onmouseover="changeColor(this)" onmouseout="restoreColor(this)"
+        style="background-color: rgb(35, 119, 237)">
+        <img src="./img/IconeSite.png" class="s-icon" alt="IconeSite" />
+        <h1 class="txt1-ns">Criação de Sites</h1>
+        <h3 class="txt2-ns">
+          <img src="./img/Line 3.png" class="linhaCard1" alt="Linha" />
+          Wordpress
+          <img src="./img/separador.png" class="pontoCard" alt="separador" />
+          Design <img src="./img/Line 3.png" class="linhaCard2" alt="Linha" />
+        </h3>
+        <p class="txt3-ns">
+          Combinamos design e as<br />tecnologias mais atuais do<br />
+          mercadopara criar uma <br />
+          forte presença digital ao seu <br />
+          negócio. Focando sempre na <br />experiência do usuário, <br />
+          transformamos seu site em <br />umamáquina de conversão!
         </p>
       </div>
-      <div class="container-Cards">
-        <div
-          class="cards-ns"
-          onmouseover="changeColor(this)"
-          onmouseout="restoreColor(this)"
-          style="background-color: rgb(35, 119, 237)"
-        >
-          <img src="./img/IconeSite.png" class="s-icon" alt="IconeSite" />
-          <h1 class="txt1-ns">Criação de Sites</h1>
-          <h3 class="txt2-ns">
-            <img src="./img/Line 3.png" class="linhaCard1" alt="Linha" />
-            Wordpress
-            <img src="./img/separador.png" class="pontoCard" alt="separador" />
-            Design <img src="./img/Line 3.png" class="linhaCard2" alt="Linha" />
-          </h3>
-          <p class="txt3-ns">
-            Combinamos design e as<br />tecnologias mais atuais do<br />
-            mercadopara criar uma <br />
-            forte presença digital ao seu <br />
-            negócio. Focando sempre na <br />experiência do usuário, <br />
-            transformamos seu site em <br />umamáquina de conversão!
-          </p>
-        </div>
-        <div
-          class="cards-ns"
-          onmouseover="changeColor(this)"
-          onmouseout="restoreColor(this)"
-          style="background-color: rgb(35, 119, 237)"
-        >
-          <img src="./img/IconeSis.png" class="s-icon" alt="IconeSistema" />
-          <h1 class="txt4-ns">Desenvolvimento de <br />Sistemas</h1>
-          <img src="./img/Line 3.png" class="linhaCard3" alt="Linha" />
-          <h3 class="txt5-ns">
-            React
-            <img src="./img/separador.png" class="pontoCard" alt="separador" />
-            Node.js
-          </h3>
-          <img src="./img/Line 3.png" class="linhaCard4" alt="Linha" />
-          <p class="txt3-ns">
-            Otimizamos e<br />
-            desenvolvemos <br />funcionalidades de acordo<br />
-            com as suas necessidades.<br />
-            Automatizar e facilitar <br />processos da sua empresa é <br />a
-            nossa prioridade. Conte-<br />nos o seu problema que
-            <br />entregamos uma solução!
-          </p>
-        </div>
-        <div
-          class="cards-ns"
-          onmouseover="changeColor(this)"
-          onmouseout="restoreColor(this)"
-          style="background-color: rgb(35, 119, 237)"
-        >
-          <img src="./img/IconeApps.png" class="s-icon" alt="IconeSistema" />
-          <h1 class="txt1-ns">Desenvolvimento de Apps</h1>
-          <h3 class="txt2-ns">
-            <img src="./img/Line 3.png" class="linhaCard5" alt="Linha" /> IOS
-            <img src="./img/separador.png" class="pontoCard" alt="separador" />
-            Android
-            <img src="./img/Line 3.png" class="linhaCard6" alt="Linha" />
-          </h3>
-          <p class="txt3-ns">
-            Tiramos sua ideia de <br />aplicativo do papel direto<br />
-            para o mercado em maior <br />
-            ascensão atualmente e<br />
-            tenha seu app pronto para<br />
-            ser baixado nas lojas da App<br />
-            Store e Play Store. Venha<br />
-            desenvolver com a gente!
-          </p>
-        </div>
+      <div class="cards-ns" onmouseover="changeColor(this)" onmouseout="restoreColor(this)"
+        style="background-color: rgb(35, 119, 237)">
+        <img src="./img/IconeSis.png" class="s-icon" alt="IconeSistema" />
+        <h1 class="txt4-ns">Desenvolvimento de <br />Sistemas</h1>
+        <img src="./img/Line 3.png" class="linhaCard3" alt="Linha" />
+        <h3 class="txt5-ns">
+          React
+          <img src="./img/separador.png" class="pontoCard" alt="separador" />
+          Node.js
+        </h3>
+        <img src="./img/Line 3.png" class="linhaCard4" alt="Linha" />
+        <p class="txt3-ns">
+          Otimizamos e<br />
+          desenvolvemos <br />funcionalidades de acordo<br />
+          com as suas necessidades.<br />
+          Automatizar e facilitar <br />processos da sua empresa é <br />a
+          nossa prioridade. Conte-<br />nos o seu problema que
+          <br />entregamos uma solução!
+        </p>
       </div>
-      <div class="container-ns">
-        <a href="https://wa.me/message/AUAPOPINXWUYJ1" target="_blank">
-          <div
-            class="SBotao"
-            onmouseover="expandAndChangeColor(this)"
-            onmouseout="restoreSizeAndColor(this)"
-            style="transform: scaleX(1); background-color: rgb(207, 221, 25)"
-          >
-            <span class="SBotao-txt"><strong>SOLICITAR ORÇAMENTO</strong></span>
-          </div>
+      <div class="cards-ns" onmouseover="changeColor(this)" onmouseout="restoreColor(this)"
+        style="background-color: rgb(35, 119, 237)">
+        <img src="./img/IconeApps.png" class="s-icon" alt="IconeSistema" />
+        <h1 class="txt1-ns">Desenvolvimento de Apps</h1>
+        <h3 class="txt2-ns">
+          <img src="./img/Line 3.png" class="linhaCard5" alt="Linha" /> IOS
+          <img src="./img/separador.png" class="pontoCard" alt="separador" />
+          Android
+          <img src="./img/Line 3.png" class="linhaCard6" alt="Linha" />
+        </h3>
+        <p class="txt3-ns">
+          Tiramos sua ideia de <br />aplicativo do papel direto<br />
+          para o mercado em maior <br />
+          ascensão atualmente e<br />
+          tenha seu app pronto para<br />
+          ser baixado nas lojas da App<br />
+          Store e Play Store. Venha<br />
+          desenvolver com a gente!
+        </p>
+      </div>
+    </div>
+    <div class="container-ns">
+      <a href="https://wa.me/message/AUAPOPINXWUYJ1" target="_blank">
+        <div class="SBotao" onmouseover="expandAndChangeColor(this)" onmouseout="restoreSizeAndColor(this)"
+          style="transform: scaleX(1); background-color: rgb(207, 221, 25)">
+          <span class="SBotao-txt"><strong>SOLICITAR ORÇAMENTO</strong></span>
+        </div>
+      </a>
+    </div>
+    <script src="./scripts/ns.js"></script>
+  </section>
+  <section id="portifolio" class="expandido">
+    <p class="titulo-portf">Portfólio</p>
+    <p class="subtitulo-portf">Nossos Trabalhos</p>
+    <div class="wraper-portf">
+      <div class="container-portf">
+        <a href="https://artusjr.com.br/index.html" class="card-portf" id="portf1">
+          <h3>ARTUS</h3>
+          <p>Site • Institucional</p>
+        </a>
+        <a href="http://pos-graduacao-ead.cp.utfpr.edu.br/sistemas_eletricos/" class="card-portf" id="portf2">
+          <h3>CESEP</h3>
+          <p>Landing Page • Blog</p>
+        </a>
+        </a>
+        <a target="_blank" href="https://ecotechstartup.com" class="card-portf" id="portf3">
+          <h3>E-CO TECH</h3>
+          <p>Landing Page • Startup</p>
+        </a>
+        <a target="_blank" href="https://www.select.eng.br" class="card-portf" id="portf4">
+          <h3>SELECT</h3>
+          <p>Site • Institucional</p>
+        </a>
+        <a target="_blank" href="https://brickengenharia.com/quem-somos/" class="card-portf" id="portf5">
+          <h3>BRICK</h3>
+          <p>Site • Institucional</p>
+        </a>
+        <a target="_blank" href="http://inceptio3d.cp.utfpr.edu.br" class="card-portf" id="portf6">
+          <h3>INCEPTION 3D</h3>
+          <p>Landing Page • Institucional</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <section id="footer">
+      <div class="colunaFooter">
+        <h1 class="footer-txt1">Localização</h1>
+        <p class="footer-txt2">
+          Rua dos Expedicionários, 568,
+          <br />
+          Sala Q 103-B, Vila Daher,
+          <br />
+          Cornélio Procópio/PR
+        </p>
+      </div>
+      <div class="colunaFooter">
+        <h1 class="footer-txt1">Contatos</h1>
+        <a href="mailto:unectjr@gmail.com" class="email-link">
+          <p class="footer-txt4" style="color: rgb(255, 255, 255); text-decoration: none">
+            unectjr@gmail.com
+          </p>
+        </a>
+        <a href="https://wa.me/message/AUAPOPINXWUYJ1 " target="_blank">
+          <p class="footer-txt4" style="color: rgb(255, 255, 255); text-decoration: none">
+            +55 (43) 98869-6363
+          </p>
         </a>
       </div>
-      <script src="./scripts/ns.js"></script>
-    </section>
-    <section id="portifolio" class="reduzido">
-      <p class="titulo-portf">Portfólio</p>
-      <p class="subtitulo-portf">Nossos Trabalhos</p>
-      <div class="wraper-portf">
-        <div class="container-portf">
-          <a
-            href="https://artusjr.com.br/index.html"
-            class="card-portf"
-            id="portf1"
-          >
-            <h3>ARTUS</h3>
-            <p>Site • Institucional</p>
-          </a>
-          <a
-            href="http://pos-graduacao-ead.cp.utfpr.edu.br/sistemas_eletricos/"
-            class="card-portf"
-            id="portf2"
-          >
-            <h3>CESEP</h3>
-            <p>Landing Page • Blog</p>
-          </a>
-        </div>
+
+      <div class="colunaFooter">
+        <h1 class="footer-txt1">Redes sociais</h1>
+        <a href="https://www.instagram.com/unectjr/" target="_blank">
+          <img class="Fimg1" src="./img/Instagram.svg" id="animated-image" alt="instagram" />
+        </a>
+        <a href="https://br.linkedin.com/company/unect-jr." target="_blank">
+          <img class="Fimg1" src="./img/LinkedIn.svg" id="animated-image2" alt="linkedin" />
+        </a>
+        <a href="https://www.facebook.com/UnectJr/" target="_blank">
+          <img class="Fimg1" src="./img/Facebook.svg" id="animated-image3" alt="facebook" />
+        </a>
+      </div>
+      <div class="colunaFooter">
+        <img class="Fimg2" src="./img/logo.png" alt="logo" />
+      </div>
+      <div class="footerLinha">
+        <hr class="horizontal-line" />
+        <p class="footer-txt3">
+          Desenvolvido por <strong class="Strong">Unect Jr.</strong>
+        </p>
       </div>
     </section>
-    <footer>
-      <section id="footer">
-        <div class="colunaFooter">
-          <h1 class="footer-txt1">Localização</h1>
-          <p class="footer-txt2">
-            Rua dos Expedicionários, 568,
-            <br />
-            Sala Q 103-B, Vila Daher,
-            <br />
-            Cornélio Procópio/PR
-          </p>
-        </div>
-        <div class="colunaFooter">
-          <h1 class="footer-txt1">Contatos</h1>
-          <a href="mailto:unectjr@gmail.com" class="email-link"
-            ><p
-              class="footer-txt4"
-              style="color: rgb(255, 255, 255); text-decoration: none"
-            >
-              unectjr@gmail.com
-            </p></a
-          >
-          <a href="https://wa.me/message/AUAPOPINXWUYJ1 " target="_blank">
-            <p
-              class="footer-txt4"
-              style="color: rgb(255, 255, 255); text-decoration: none"
-            >
-              +55 (43) 98869-6363
-            </p>
-          </a>
-        </div>
+  </footer>
+  <script src="./scripts/btvoltatopo.js"></script>
+</body>
 
-        <div class="colunaFooter">
-          <h1 class="footer-txt1">Redes sociais</h1>
-          <a href="https://www.instagram.com/unectjr/" target="_blank">
-            <img
-              class="Fimg1"
-              src="./img/Instagram.svg"
-              id="animated-image"
-              alt="instagram"
-            />
-          </a>
-          <a href="https://br.linkedin.com/company/unect-jr." target="_blank">
-            <img
-              class="Fimg1"
-              src="./img/LinkedIn.svg"
-              id="animated-image2"
-              alt="linkedin"
-            />
-          </a>
-          <a href="https://www.facebook.com/UnectJr/" target="_blank">
-            <img
-              class="Fimg1"
-              src="./img/Facebook.svg"
-              id="animated-image3"
-              alt="facebook"
-            />
-          </a>
-        </div>
-        <div class="colunaFooter">
-          <img class="Fimg2" src="./img/logo.png" alt="logo" />
-        </div>
-        <div class="footerLinha">
-          <hr class="horizontal-line" />
-          <p class="footer-txt3">
-            Desenvolvido por <strong class="Strong">Unect Jr.</strong>
-          </p>
-        </div>
-      </section>
-    </footer>
-    <script src="./scripts/btvoltatopo.js"></script>
-  </body>
 </html>

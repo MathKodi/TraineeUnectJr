@@ -95,6 +95,27 @@ img {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio-cesep.png);
 }
+#portf3 {
+  background-image: linear-gradient(#000205b2, #11111180),
+    url(./img/portifolio/portfolio-E-COTECH.png);
+}
+#portf4 {
+  background-image: linear-gradient(#000205b2, #11111180),
+    url(./img/portifolio/portfolio\ -\ select.png);
+}
+#portf5 {
+  background-image: linear-gradient(#000205b2, #11111180),
+    url(./img/portifolio/portfolio\ -\ brick.png);
+}
+#portf6{
+  background-image: linear-gradient(#000205b2, #11111180),
+    url(./img/portifolio/inception3d-portfolio.png);
+}
+.wraper-portf{
+  display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
 .card-portf {
   width: 540px;
   height: 405px;
@@ -108,6 +129,10 @@ img {
   justify-content: flex-end;
   transition: transform 0.5s;
   transform: translateY(0px);
+}
+#portifolio.expandido {
+  height: auto;
+  padding-bottom: 150px;
 }
 .card-portf h3 {
   font-family: ubuntu;
