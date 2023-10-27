@@ -3,10 +3,12 @@
   padding: 0;
   border: 0;
 }
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 div,
 img,
 footer,
@@ -20,10 +22,12 @@ p {
   font: inherit;
   vertical-align: baseline;
 }
+
 body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 header {
   background: transparent;
   position: relative;
@@ -35,9 +39,11 @@ header {
   font: inherit;
   vertical-align: baseline;
 }
+
 a {
   text-decoration: none;
 }
+
 p {
   display: block;
   margin-block-start: 1em;
@@ -45,21 +51,89 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 img {
   max-inline-size: 100%;
   max-block-size: 100%;
 }
-#diferenciais{
+
+#contato {
   display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 0px 100px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    position: relative;
-    background-color: #333;
+  flex-direction: row;
+  column-gap: 70px;
+  width: 100%;
+  height: auto;
+  padding: 0px 100px;
+  padding-top: 50px;
+  padding-bottom: 55px;
+  position: relative;
+  background-color: #333;
 }
+
+#sobre-nos {
+  background-image: url(./img/time-placeholder\ 3.png);
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  padding-top: 50px;
+  width: auto;
+  height: 748px;
+  position: relative;
+}
+
+#sobre-nos::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.712);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#carouselcontainer-sn {
+  width: 500px;
+  height: 600px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 20px;
+  margin-left: 130px;
+  right: 0;
+  margin-right: 150px;
+  margin-top: 120px;
+}
+
+#carousel-sn {
+  width: 300%;
+  height: 406.25px;
+  display: flex;
+}
+
+#conteudos {
+  background-image: url(./img/fundo-azul-2\ 1.png);
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  padding-top: 50px;
+  width: auto;
+  height: 450px;
+  position: relative;
+}
+
+#diferenciais {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 0px 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  position: relative;
+  background-color: #333;
+}
+
 #diferenciais::before {
   content: "";
   background-image: url(./img/border-right.svg);
@@ -72,6 +146,7 @@ img {
   top: 0;
   right: 0;
 }
+
 #diferenciais::after {
   content: "";
   background-image: url(./img/border-left.svg);
@@ -82,6 +157,7 @@ img {
   bottom: 0;
   left: 0;
 }
+
 #portifolio {
   display: flex;
   flex-direction: column;
@@ -94,6 +170,7 @@ img {
   height: 1082px;
   position: relative;
 }
+
 #servicos {
   display: flex;
   flex-direction: column;
@@ -104,85 +181,304 @@ img {
   height: 1074px;
   position: relative;
 }
+
 #servicos .subtitulo-ns::before {
   content: url(./img/boda-inferior-subtitulo.svg);
   position: absolute;
   left: 80px;
   top: 170px;
 }
+
 #servicos .subtitulo-ns::after {
   content: url(./img/boda-superior-subtitulo.svg);
   position: absolute;
   top: 60px;
   left: 500px;
 }
+
 #banner {
   width: 100%;
   height: 1066px;
 }
+
 #portf1 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio-artus.png);
 }
+
 #portf2 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio-cesep.png);
 }
+
 #portf3 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio-E-COTECH.png);
 }
+
 #portf4 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio\ -\ select.png);
 }
+
 #portf5 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio\ -\ brick.png);
 }
-#portf6{
+
+#portf6 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/inception3d-portfolio.png);
 }
+
 #portf7 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/cotton-portfolio.png);
 }
-#portf8{
+
+#portf8 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/zampro-portfolio.png);
 }
-#portf9{
+
+#portf9 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio-ECAE-UEL.png);
 }
-#portf10{
+
+#portf10 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio-PARAÍSODASCAMAS.png);
 }
-#portf11{
+
+#portf11 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio-TITANUS.png);
 }
-#portf12{
+
+#portf12 {
   background-image: linear-gradient(#000205b2, #11111180),
     url(./img/portifolio/portfolio-COCRIAGRO.png);
 }
-.card-dif{
-  width: 330px;
-    height: 403px;
-    padding-top: 75px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
-    background: #4d4d4d;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-    transition: 0.6s ease;
-    z-index: 1;
+
+.carousel-item {
+  flex: 0 0 33.33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  transition: opacity 0.5s ease-in-out;
 }
+
+.txt-carousel {
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  margin-left: 310px;
+  margin-bottom: 20px;
+}
+
+.txtunderline-carousel {
+  text-decoration: underline;
+  color: #E0EB4F;
+  text-underline-offset: 8px;
+}
+
+.div-sn {
+  display: flex;
+  padding-left: 100px;
+}
+
+.txt-sn {
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.txt1-sn {
+  font-family: ubuntu;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  color: #DCDCDC;
+  padding-bottom: 58px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.titulo-sn {
+  font-family: ubuntu;
+  font-size: 24px;
+  font-weight: 500;
+  color: #F2F3F4CC;
+  padding-bottom: 10px;
+  position: relative;
+  margin-top: -60px;
+  margin-bottom: 0;
+}
+
+.subtitulo-sn {
+  font-family: Nunito;
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding-bottom: 58px;
+  position: relative;
+  margin-bottom: -58px;
+  margin-top: 0;
+}
+
+#sobre-nos .subtitulo-sn::before {
+  content: url(./img/boda-inferior-subtitulo.svg);
+  position: absolute;
+  left: -24px;
+  top: 80px;
+}
+
+#sobre-nos .subtitulo-sn::after {
+  content: url(./img/boda-superior-subtitulo.svg);
+  position: absolute;
+  top: -30px;
+  left: 435px;
+}
+
+.livro {
+  height: auto;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  padding-left: 163px;
+  margin-right: 150px;
+}
+
+.btn-c {
+  display: flex;
+  width: 443px;
+  height: 81px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.btn-c:hover .txt2-c {
+  color: #505C2D;
+  box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
+}
+
+.btn-c:hover {
+  box-shadow: 0px 25px 50px 0px rgba(207, 221, 25, 0.50);
+}
+
+.txt2-c {
+  position: absolute;
+  z-index: 1;
+  transition: color 0.3s ease;
+  color: var(--unect-branco, #F2F3F4);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.92px;
+}
+
+.div-c {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.dif-c {
+  color: #CFDD19;
+}
+
+.dif2-c {
+  text-decoration: underline;
+  color: #CFDD19;
+  text-decoration-line: 10px;
+  text-underline-offset: 8px;
+}
+
+.txt-c {
+  color: #FFF;
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  margin-top: 53px;
+}
+
+.text-c {
+  flex-direction: column;
+}
+
+.titulo-c {
+  font-family: ubuntu;
+  font-size: 24px;
+  font-weight: 500;
+  color: #F2F3F4CC;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: -40px;
+  margin-top: 0;
+}
+
+.subtitulo-c {
+  font-family: Nunito;
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFFFFF;
+  padding-bottom: 58px;
+  position: relative;
+  margin-bottom: -58px;
+  margin-top: 30px;
+}
+
+#conteudos .subtitulo-c::before {
+  content: url(./img/boda-inferior-subtitulo.svg);
+  position: absolute;
+  left: -24px;
+  top: 25px;
+}
+
+#conteudos .subtitulo-c::after {
+  content: url(./img/boda-superior-subtitulo.svg);
+  position: absolute;
+  top: -30px;
+  left: 515px;
+}
+
+.card-dif {
+  width: 330px;
+  height: 330px;
+  padding-top: 75px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
+  background: #4d4d4d;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  transition: 0.6s ease;
+  z-index: 1;
+}
+
 .card-dif div::before {
   content: "";
   position: absolute;
@@ -194,6 +490,7 @@ img {
   border-radius: 0 5px 5px 0;
   transition: 0.6s ease;
 }
+
 .card-dif div::after {
   content: "";
   position: absolute;
@@ -205,6 +502,7 @@ img {
   border-radius: 10px 0 0 10px;
   transition: 0.6s ease;
 }
+
 .card-dif:hover div::before {
   width: 30%;
 
@@ -215,6 +513,7 @@ img {
 
   border-radius: 10px 0 0 10px;
 }
+
 .card-dif:hover h1 {
   word-spacing: normal;
   font-size: 18px;
@@ -225,17 +524,21 @@ img {
 
   background-color: #cfdd19;
 }
+
 .card-dif:hover p {
   opacity: 1;
 }
+
 .card-dif:hover h1 {
   opacity: 0;
   top: -15px;
 }
+
 .card-dif:hover .h1_onhover {
   opacity: 1;
   top: -15px;
 }
+
 .card-dif:hover div::after {
   width: 30%;
 
@@ -246,6 +549,7 @@ img {
 
   border-radius: 0 10px 10px 0;
 }
+
 .card-dif i {
   position: relative;
   top: 0;
@@ -254,48 +558,56 @@ img {
   background-color: #5c9df6;
   transition: 0.6s;
 }
+
 .icon1-dif {
   -webkit-mask-image: url(https://res.cloudinary.com/dh69yzzhd/image/upload/v1694193394/Vector_2_yeeulc.svg);
   mask-image: url(https://res.cloudinary.com/dh69yzzhd/image/upload/v1694193394/Vector_2_yeeulc.svg);
   width: 100px;
   height: 86px;
 }
-.icon2-dif{
+
+.icon2-dif {
   -webkit-mask-image: url(https://res.cloudinary.com/dh69yzzhd/image/upload/v1694193419/Vector_3_wiwtxi.svg);
-    mask-image: url(https://res.cloudinary.com/dh69yzzhd/image/upload/v1694193419/Vector_3_wiwtxi.svg);
-    width: 82px;
-    height: 77px;
+  mask-image: url(https://res.cloudinary.com/dh69yzzhd/image/upload/v1694193419/Vector_3_wiwtxi.svg);
+  width: 82px;
+  height: 77px;
 }
-.icon3-dif{
+
+.icon3-dif {
   -webkit-mask-image: url(https://res.cloudinary.com/dh69yzzhd/image/upload/v1694193422/Vector_4_hqmdb8.svg);
-    mask-image: url(https://res.cloudinary.com/dh69yzzhd/image/upload/v1694193422/Vector_4_hqmdb8.svg);
-    width: 90px;
-    height: 79px;
+  mask-image: url(https://res.cloudinary.com/dh69yzzhd/image/upload/v1694193422/Vector_4_hqmdb8.svg);
+  width: 90px;
+  height: 79px;
 }
+
 .card-dif div {
   position: relative;
   width: 100%;
 }
+
 .card-dif .h1_onhover {
   position: absolute;
   opacity: 0;
   top: 0;
   transition: 0.6s ease;
 }
+
 .card-dif:hover p {
   opacity: 1;
 }
+
 .card-dif p {
-  margin:0;
+  margin: 0;
   padding: 0 32px;
   opacity: 0;
   transition: 0.6s ease;
   color: #f2f2f2;
-    font-family: Ubuntu;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 1px;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
+
 .card-dif h1 {
   color: #f2f2f2;
   font-family: Ubuntu;
@@ -306,77 +618,88 @@ img {
   letter-spacing: 1.2px;
   transition: 0.6s ease;
 }
-.wrapper-dif{
+
+.wrapper-dif {
   display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-x: auto;
-    z-index: 1;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  z-index: 1;
+  width: 1700px;
 }
-.container-dif{
+
+.container-dif {
   align-self: center;
-    max-width: 1440px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 20px;
-    column-gap: 45px;
-    flex-flow: row nowrap;
-    padding-bottom: 10px;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 45px;
+  flex-flow: row nowrap;
+  padding-bottom: 10px;
 }
-.titulo-dif{
+
+.titulo-dif {
   font-family: ubuntu;
-    font-size: 24px;
-    font-weight: 500;
-    color: rgba(207, 221, 25, 0.85);
-    padding-bottom: 10px;
-    margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(207, 221, 25, 0.85);
+  padding-bottom: 10px;
+  margin: 0;
 }
-.subtitulo-dif{
+
+.subtitulo-dif {
   margin: 0;
   color: #F2F3F4;
-    width: 415px;
-    word-wrap: break-word;
-    font-family: Nunito;
-    font-size: 35px;
-    font-weight: 700;
-    padding-bottom: 58px;
-    position: relative;
+  width: 415px;
+  word-wrap: break-word;
+  font-family: Nunito;
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 58px;
+  position: relative;
 }
+
 .subtitulo-dif::before {
   content: url(./img/boda-inferior-subtitulo.svg);
   position: absolute;
   left: -24px;
   top: 75px;
 }
+
 .subtitulo-dif::after {
   content: url(./img/boda-superior-subtitulo.svg);
   position: absolute;
   top: -15px;
 }
-.btn-Expandir{
+
+.btn-Expandir {
   display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(0deg, rgba(17, 17, 17, 0.30) 0%, rgba(13, 13, 13, 0.00) 100%);
-    width: 100vw;
-    height: 273px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgba(17, 17, 17, 0.30) 0%, rgba(13, 13, 13, 0.00) 100%);
+  width: 100vw;
+  height: 273px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-.bt-Expandir{
+
+.bt-Expandir {
   background-image: url(./img/down\ arrow\ kk.jpeg);
-    width: 300px;
-    height: 300px;
-    transition-duration: 0.5s;
+  width: 300px;
+  height: 300px;
+  transition-duration: 0.5s;
 }
-.wraper-portf{
+
+.wraper-portf {
   display: flex;
-    justify-content: center;
-    overflow: hidden;
+  justify-content: center;
+  overflow: hidden;
 }
+
 .card-portf {
   width: 540px;
   height: 405px;
@@ -391,14 +714,17 @@ img {
   transition: transform 0.5s;
   transform: translateY(0px);
 }
+
 #portifolio.s {
-    height: auto;
-    padding-bottom: 150px;
+  height: auto;
+  padding-bottom: 150px;
 }
+
 #portifolio.s .container-portf {
   height: auto;
   padding-bottom: 150px;
 }
+
 .card-portf h3 {
   font-family: ubuntu;
   font-size: 24px;
@@ -406,6 +732,7 @@ img {
   font-weight: 700;
   padding-bottom: 10px;
 }
+
 .card-portf p {
   font-family: ubuntu;
   font-size: 16px;
@@ -413,6 +740,7 @@ img {
   font-weight: 500;
   color: rgba(242, 243, 244, 0.7);
 }
+
 .container-portf {
   display: flex;
   align-items: center;
@@ -424,6 +752,7 @@ img {
   height: 1060px;
   position: relative;
 }
+
 .titulo-portf {
   font-family: ubuntu;
   font-size: 24px;
@@ -432,6 +761,7 @@ img {
   padding-bottom: 10px;
   margin: 0;
 }
+
 .subtitulo-portf {
   font-family: Nunito;
   font-size: 35px;
@@ -441,12 +771,14 @@ img {
   position: relative;
   margin: 0;
 }
+
 #portifolio .subtitulo-portf::before {
   content: url(./img/boda-inferior-subtitulo.svg);
   position: absolute;
   left: -24px;
   top: 20px;
 }
+
 #portifolio .subtitulo-portf::after {
   content: url(./img/boda-superior-subtitulo.svg);
   position: absolute;
@@ -463,6 +795,7 @@ img {
   column-gap: 30px;
   margin-top: -58px;
 }
+
 .container-ns {
   display: inline-flex;
   padding: 30px 90px;
@@ -470,6 +803,7 @@ img {
   align-items: center;
   margin-top: -100px;
 }
+
 .SBotao {
   width: 495px;
   height: 89px;
@@ -486,6 +820,7 @@ img {
   align-items: center;
   margin-top: 50px;
 }
+
 .SBotao-txt {
   color: var(--unect-verde-escuro, #505c2d);
   font-family: Inter;
@@ -495,6 +830,7 @@ img {
   line-height: normal;
   letter-spacing: 2.4px;
 }
+
 .cards-ns {
   width: 360px;
   height: 475px;
@@ -511,6 +847,7 @@ img {
   margin: 0;
   position: relative;
 }
+
 .txt1-ns {
   color: var(--unect-branco, #f2f3f4);
   font-family: Ubuntu;
@@ -522,6 +859,7 @@ img {
   position: absolute;
   margin-bottom: 200px;
 }
+
 .txt2-ns {
   color: var(--unect-verde, #cfdd19);
   font-family: Ubuntu;
@@ -534,6 +872,7 @@ img {
   position: absolute;
   margin-top: -80px;
 }
+
 .txt3-ns {
   color: var(--unect-branco, #f2f3f4);
   text-align: center;
@@ -546,6 +885,7 @@ img {
   position: absolute;
   margin-top: 220px;
 }
+
 .txt4-ns {
   color: var(--unect-branco, #f2f3f4);
   font-family: Ubuntu;
@@ -557,6 +897,7 @@ img {
   position: absolute;
   margin-bottom: 180px;
 }
+
 .txt5-ns {
   color: var(--unect-verde, #cfdd19);
   font-family: Ubuntu;
@@ -569,6 +910,7 @@ img {
   position: absolute;
   margin-top: -80px;
 }
+
 .txt6-ns {
   color: var(--unect-branco, #f2f3f4);
   text-align: center;
@@ -581,47 +923,57 @@ img {
   position: absolute;
   margin-top: 220px;
 }
+
 .s-icon {
   position: absolute;
   margin-bottom: 310px;
 }
+
 .pontoCard {
   margin-bottom: 4px;
 }
+
 .linhaCard1 {
   position: absolute;
   left: -95px;
   margin-top: 8px;
 }
+
 .linhaCard2 {
   position: absolute;
   left: 194px;
   margin-top: 8px;
 }
+
 .linhaCard3 {
   position: absolute;
   left: 0px;
   margin-top: -78px;
 }
+
 .linhaCard4 {
   position: absolute;
   left: 289px;
   margin-top: -78px;
 }
+
 .linhaCard5 {
   position: absolute;
   left: -121px;
   margin-top: 8px;
 }
+
 .linhaCard6 {
   position: absolute;
   left: 168px;
   margin-top: 8px;
 }
+
 .div-ns {
   align-items: flex-start;
   padding-left: 100px;
 }
+
 .titulo-ns {
   font-family: ubuntu;
   font-size: 24px;
@@ -630,6 +982,7 @@ img {
   padding-bottom: 10px;
   margin: 0;
 }
+
 .subtitulo-ns {
   font-family: Nunito;
   font-size: 40px;
@@ -638,6 +991,7 @@ img {
   padding-bottom: 58px;
   margin: 0;
 }
+
 .unectBanner {
   background-image: url(./img/time_foto.png);
   background-size: cover;
@@ -649,12 +1003,14 @@ img {
   filter: brightness(45.83%);
   overflow: hidden;
 }
+
 .unectBannerTxt {
   text-align: center;
   margin-top: -500px;
   position: relative;
   font-family: "Ubuntu", sans-serif;
 }
+
 .underlinedTxt {
   text-decoration: underline;
   text-underline-offset: 25px;
@@ -667,14 +1023,17 @@ img {
   letter-spacing: 9px;
   color: #e0eb4f;
 }
+
 .bannerTxt {
   color: #fff;
 }
+
 #footer {
   height: 584px;
   background-color: #333333;
   overflow: hidden;
 }
+
 .colunaFooter {
   margin-top: 60px;
   width: 25%;
@@ -686,17 +1045,20 @@ img {
   padding-left: 150px;
   margin-bottom: 200px;
 }
+
 .footerLinha {
   display: inline;
   margin-bottom: 103px;
   text-align: center;
 }
+
 .horizontal-line {
   border: 1px solid #ffffff;
   margin-left: 150px;
   margin-right: 150px;
   position: relative;
 }
+
 .footer-txt1 {
   color: #fff;
   font-family: Ubuntu;
@@ -705,6 +1067,7 @@ img {
   font-weight: 700;
   line-height: normal;
 }
+
 .footer-txt2 {
   color: #fff;
   font-family: Ubuntu;
@@ -715,6 +1078,7 @@ img {
   letter-spacing: 1px;
   margin-top: 0;
 }
+
 .footer-txt3 {
   color: var(--Branco, #fff);
   text-align: center;
@@ -724,6 +1088,7 @@ img {
   font-weight: 400;
   line-height: normal;
 }
+
 .footer-txt4 {
   font-family: Ubuntu;
   font-size: 20px;
@@ -737,18 +1102,22 @@ img {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
 .Strong {
   font-weight: bold;
 }
+
 .Fimg1 {
   margin-top: 30px;
   display: flex;
 }
+
 .Fimg2 {
   margin-top: 100px;
   width: 150px;
   height: 184.932px;
 }
+
 .header-text {
   display: inline-block;
   font-size: 24px;
@@ -758,9 +1127,11 @@ img {
   text-underline-offset: 10px;
   margin-left: 30px;
 }
+
 .menu {
   padding: 150px;
 }
+
 .header {
   background-color: #1f64c5;
   display: flex;
@@ -769,13 +1140,16 @@ img {
   height: 140px;
   width: 100%;
 }
+
 .logo {
   padding: 150px;
 }
+
 .logo-img {
   width: 80px;
   height: 98px;
 }
+
 .bt-whatsapp {
   width: 50px;
   height: auto;
@@ -784,6 +1158,7 @@ img {
   right: 40px;
   z-index: 5;
 }
+
 #bt-topo {
   position: fixed;
   bottom: 50px;
@@ -799,6 +1174,7 @@ img {
   cursor: pointer;
   z-index: 5;
 }
+
 .arrow {
   border: solid #f2f3f4;
   border-width: 0 7px 7px 0;
@@ -806,14 +1182,17 @@ img {
   padding: 5px;
   display: inline-block;
 }
-.down{
+
+.down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .header {
     height: 80px;
