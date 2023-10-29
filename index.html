@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Nunito:wght@700&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap"
     rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UNECT!</title>
+  <title>UNECT</title>
 </head>
 
 <body>
@@ -22,38 +22,66 @@
         <img src="./img/bt-whatsapp.svg" alt="zapzap" />
       </a>
     </div>
-    <div id="bt-topo" style="display: none">
-      <i class="arrow up"></i>
+    <div id="bt-topo">
+      <a href="#topo">
+        <i class="arrow up"></i>
+      </a>
     </div>
-    <section class="header">
+    <section class="header" id="topo">
       <div class="logo">
         <img class="logo-img" src="./img/logo.png" alt="logo" />
       </div>
       <div class="menu">
-        <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+        <ul class="header-text">
           Início
         </ul>
         <a href="#servicos">
-          <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+          <ul class="header-text">
             Serviços
           </ul>
         </a>
         <a href="#portifolio">
-          <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+          <ul class="header-text">
             Portfólio
           </ul>
         </a>
         <a href="#sobre-nos">
-          <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+          <ul class="header-text">
             Sobre Nós
           </ul>
         </a>
         <a href="#contato">
-          <ul class="header-text" style="color: rgb(242, 243, 244); text-decoration: none">
+          <ul class="header-text">
             Contato
           </ul>
         </a>
       </div>
+      <div class="menu-mobile">
+        <button onclick="abrirMenu()">
+          <img src="./img/BotaoMenu.png" alt="botao menu">
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <a href="#">
+            <li class="item-menu">Início</li>
+          </a>
+          </a>
+          <a href="#servicos">
+            <li class="item-menu">Serviços</li>
+          </a>
+          <a href="#portifolios">
+            <li class="item-menu">Portfólio</li>
+          </a>
+          <a href="#sobre-nos">
+            <li class="item-menu">Sobre Nós</li>
+          </a>
+          <a href="#contato">
+            <li class="item-menu">Contato</li>
+          </a>
+        </ul>
+      </div>
+      <script src="./scripts/menu.js"></script>
     </section>
   </header>
   <section id="banner">
@@ -75,8 +103,7 @@
       </p>
     </div>
     <div class="container-Cards">
-      <div class="cards-ns" onmouseover="changeColor(this)" onmouseout="restoreColor(this)"
-        style="background-color: rgb(35, 119, 237)">
+      <div class="cards-ns">
         <img src="./img/IconeSite.png" class="s-icon" alt="IconeSite" />
         <h1 class="txt1-ns">Criação de Sites</h1>
         <h3 class="txt2-ns">
@@ -93,8 +120,7 @@
           transformamos seu site em <br />umamáquina de conversão!
         </p>
       </div>
-      <div class="cards-ns" onmouseover="changeColor(this)" onmouseout="restoreColor(this)"
-        style="background-color: rgb(35, 119, 237)">
+      <div class="cards-ns">
         <img src="./img/IconeSis.png" class="s-icon" alt="IconeSistema" />
         <h1 class="txt4-ns">Desenvolvimento de <br />Sistemas</h1>
         <img src="./img/Line 3.png" class="linhaCard3" alt="Linha" />
@@ -113,8 +139,7 @@
           <br />entregamos uma solução!
         </p>
       </div>
-      <div class="cards-ns" onmouseover="changeColor(this)" onmouseout="restoreColor(this)"
-        style="background-color: rgb(35, 119, 237)">
+      <div class="cards-ns">
         <img src="./img/IconeApps.png" class="s-icon" alt="IconeSistema" />
         <h1 class="txt1-ns">Desenvolvimento de Apps</h1>
         <h3 class="txt2-ns">
@@ -134,10 +159,69 @@
         </p>
       </div>
     </div>
+    <div class="carousel-container-ns">
+      <div class="carousel-ns" style="transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+      transform: translateX(0px);">
+        <div class="cards-ns">
+          <img src="./img/IconeSite.png" class="s-icon" alt="IconeSite" />
+          <h1 class="txt1-ns">Criação de Sites</h1>
+          <h3 class="txt2-ns">
+            <img src="./img/Line 3.png" class="linhaCard1" alt="Linha" />
+            Wordpress
+            <img src="./img/separador.png" class="pontoCard" alt="separador" />
+            Design <img src="./img/Line 3.png" class="linhaCard2" alt="Linha" />
+          </h3>
+          <p class="txt3-ns">
+            Combinamos design e as<br />tecnologias mais atuais do<br />
+            mercadopara criar uma <br />
+            forte presença digital ao seu <br />
+            negócio. Focando sempre na <br />experiência do usuário, <br />
+            transformamos seu site em <br />umamáquina de conversão!
+          </p>
+        </div>
+        <div class="cards-ns">
+          <img src="./img/IconeSis.png" class="s-icon" alt="IconeSistema" />
+          <h1 class="txt4-ns">Desenvolvimento de <br />Sistemas</h1>
+          <img src="./img/Line 3.png" class="linhaCard3" alt="Linha" />
+          <h3 class="txt5-ns">
+            React
+            <img src="./img/separador.png" class="pontoCard" alt="separador" />
+            Node.js
+          </h3>
+          <img src="./img/Line 3.png" class="linhaCard4" alt="Linha" />
+          <p class="txt3-ns">
+            Otimizamos e<br />
+            desenvolvemos <br />funcionalidades de acordo<br />
+            com as suas necessidades.<br />
+            Automatizar e facilitar <br />processos da sua empresa é <br />a
+            nossa prioridade. Conte-<br />nos o seu problema que
+            <br />entregamos uma solução!
+          </p>
+        </div>
+        <div class="cards-ns">
+          <img src="./img/IconeApps.png" class="s-icon" alt="IconeSistema" />
+          <h1 class="txt1-ns">Desenvolvimento de Apps</h1>
+          <h3 class="txt2-ns">
+            <img src="./img/Line 3.png" class="linhaCard5" alt="Linha" /> IOS
+            <img src="./img/separador.png" class="pontoCard" alt="separador" />
+            Android
+            <img src="./img/Line 3.png" class="linhaCard6" alt="Linha" />
+          </h3>
+          <p class="txt3-ns">
+            Tiramos sua ideia de <br />aplicativo do papel direto<br />
+            para o mercado em maior <br />
+            ascensão atualmente e<br />
+            tenha seu app pronto para<br />
+            ser baixado nas lojas da App<br />
+            Store e Play Store. Venha<br />
+            desenvolver com a gente!
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="container-ns">
       <a href="https://wa.me/message/AUAPOPINXWUYJ1" target="_blank">
-        <div class="SBotao" onmouseover="expandAndChangeColor(this)" onmouseout="restoreSizeAndColor(this)"
-          style="transform: scaleX(1); background-color: rgb(207, 221, 25)">
+        <div class="SBotao">
           <span class="SBotao-txt"><strong>SOLICITAR ORÇAMENTO</strong></span>
         </div>
       </a>
@@ -214,10 +298,9 @@
     <div class="wrapper-dif">
       <div class="container-dif">
         <div class="card-dif">
-          <i class="icon1-dif"></i>
+          <img src="./img/Vector_2_yeeulc.svg" class="icon1-dif"></i>
           <div>
             <h1>Suporte <br> Acadêmico</h1>
-            <h1 class="h1_onhover">Suporte Acadêmico</h1>
           </div>
           <p>
             Contamos com auxílio de excelentes professores e ótima infraestrutura, nos permitindo fornecer um serviço de
@@ -225,10 +308,9 @@
           </p>
         </div>
         <div class="card-dif">
-          <i class="icon2-dif"></i>
+          <img src="./img/Vector_3_wiwtxi.svg" class="icon2-dif"></i>
           <div>
             <h1>Custo <br> X <br> Benefício</h1>
-            <h1 class="h1_onhover">Custo X Benefício</h1>
           </div>
           <p>
             A maior remuneração para um empresário júnior é o aprendizado, o que nos permite cobrar menos e manter alta
@@ -236,10 +318,9 @@
           </p>
         </div>
         <div class="card-dif">
-          <i class="icon3-dif"></i>
+          <img src="./img/Vector_4_hqmdb8.svg" class="icon3-dif"></i>
           <div>
             <h1>Movimento <br> Empresa Júnior</h1>
-            <h1 class="h1_onhover">Movimento Empresa Júnior</h1>
           </div>
           <p>
             Fazemos parte do MEJ. Um movimento que acredita na construção de um país mais ético, mais educador,
@@ -293,7 +374,54 @@
     <script src="scripts/sobrenos.js"></script>
   </section>
   <section id="contato">
-
+    <div class="informacoes-ctt">
+      <div>
+        <p class="titulo-ctt">Contatos</p>
+        <p class="subtitulo-ctt">Conecte-se Conosco</p>
+        <p class="subtitulo2-ctt">Está precisando de <span style="color: #CFDD19;">ajuda</span>?</p>
+        <p class="txt-ctt">Sua busca por soluções inovadoras começa aqui. Entre em contato conosco e transforme
+          ideias em realidade.</p>
+        <hr class="linha-ctt"></span>
+        <p class="subtitulo2-ctt">Nossas redes sociais</p>
+        <a href="https://www.instagram.com/unectjr/" class="redesocial-ctt">
+          <img src="./img/instagram (1).svg" alt="Instagram">
+          <p class="img-ctt">Instagram</p>
+        </a>
+        <a href="https://www.linkedin.com/company/unect-jr./mycompany/" class="redesocial-ctt">
+          <img src="./img/Linkedin (1).svg" alt="Linkedin">
+          <p class="img-ctt">Linkedin</p>
+        </a>
+        <a href="https://www.facebook.com/UnectJr" class="redesocial-ctt">
+          <img src="./img/Facebook (2).svg" alt="Facebook">
+          <p class="img-ctt">Facebook</p>
+        </a>
+      </div>
+    </div>
+    <div class="forms">
+      <form action="https://formsubmit.co/unectjr@gmail.com" method="post" class="formulario" id="form">
+        <p class="txt-forms">Nos mande uma mensagem e retornaremos em breve!</p>
+        <div class="input-form">
+          <label for="nome">Nome *</label>
+          <input type="text" class="input" name="nome" id="nome" placeholder="Digite seu nome" required>
+        </div>
+        <div class="input-form">
+          <label for="email">Email *</label>
+          <input type="text" class="input" name="email" id="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="inputtxt-form">
+          <label for="texto">Mensagem *</label>
+          <textarea name="texto" classe="input" id="texto" placeholder="Digite sua mensagem" required></textarea>
+        </div>
+        <div class="checkbox-form">
+          <input type="checkbox" id="termos" required>
+          <label for="termos">Li e concordo com os termos</label>
+        </div>
+        <button id="bt-form" type="submit">
+          Enviar
+          <img src="./img/imgBotao.svg" alt="seta enviar">
+        </button>
+      </form>
+    </div>
   </section>
   <footer>
     <section id="footer">
@@ -310,12 +438,12 @@
       <div class="colunaFooter">
         <h1 class="footer-txt1">Contatos</h1>
         <a href="mailto:unectjr@gmail.com" class="email-link">
-          <p class="footer-txt4" style="color: rgb(255, 255, 255); text-decoration: none">
+          <p class="footer-txt4">
             unectjr@gmail.com
           </p>
         </a>
         <a href="https://wa.me/message/AUAPOPINXWUYJ1 " target="_blank">
-          <p class="footer-txt4" style="color: rgb(255, 255, 255); text-decoration: none">
+          <p class="footer-txt4">
             +55 (43) 98869-6363
           </p>
         </a>
@@ -324,13 +452,13 @@
       <div class="colunaFooter">
         <h1 class="footer-txt1">Redes sociais</h1>
         <a href="https://www.instagram.com/unectjr/" target="_blank">
-          <img class="Fimg1" src="./img/Instagram.svg" id="animated-image" alt="instagram" />
+          <img class="Fimg1" src="./img/Instagram.svg" alt="instagram" />
         </a>
         <a href="https://br.linkedin.com/company/unect-jr." target="_blank">
-          <img class="Fimg1" src="./img/LinkedIn.svg" id="animated-image2" alt="linkedin" />
+          <img class="Fimg1" src="./img/LinkedIn.svg" alt="linkedin" />
         </a>
         <a href="https://www.facebook.com/UnectJr/" target="_blank">
-          <img class="Fimg1" src="./img/Facebook.svg" id="animated-image3" alt="facebook" />
+          <img class="Fimg1" src="./img/Facebook.svg" alt="facebook" />
         </a>
       </div>
       <div class="colunaFooter">
@@ -344,7 +472,6 @@
       </div>
     </section>
   </footer>
-  <script src="./scripts/btvoltatopo.js"></script>
 </body>
 
 </html>
