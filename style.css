@@ -127,9 +127,10 @@ img {
   flex-direction: column;
   width: 100%;
   height: auto;
-  padding: 0px 100px;
+  padding: 0;
   padding-top: 50px;
   padding-bottom: 100px;
+  padding-left: 100px;
   position: relative;
   background-color: #333;
 }
@@ -800,7 +801,6 @@ img {
   justify-content: center;
   overflow-x: auto;
   z-index: 1;
-  width: 1700px;
   margin: 0;
 }
 
@@ -1230,6 +1230,10 @@ img {
   position: relative;
 }
 
+.footer-mobile {
+  display: none;
+}
+
 .footer-txt1 {
   color: #fff;
   font-family: Ubuntu;
@@ -1426,6 +1430,10 @@ img {
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1600px) {
+  .livro {
+    margin-right: -50px;
+  }
+
   .cards-ns {
     width: 275px;
     height: 360px;
@@ -1533,6 +1541,181 @@ img {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .horizontal-line {
+    border: 1px solid #FFFFFF;
+    margin-right: 0;
+    margin-left: 275px;
+    position: relative;
+    top: 600px;
+    right: 320px;
+  }
+
+  .colunaFooter {
+    display: none;
+  }
+
+  .footer-txt1 {
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .footer-txt2 {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  .footer-txt3 {
+    display: none;
+  }
+
+  .footer-txt4 {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    margin-top: 16px;
+    text-underline-offset: 4px;
+  }
+
+  .Fimg3 {
+    width: 51px;
+    height: 62px;
+  }
+
+  .footer-txt5 {
+    color: var(--Branco, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 17px;
+  }
+
+  .footer2-mobile {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+    margin-left: 160px;
+  }
+
+  .footer-mobile {
+    display: flex;
+    padding-left: 150px;
+    text-align: left;
+    float: left;
+    box-sizing: border-box;
+  }
+
+  #footer {
+    height: 700px;
+  }
+
+  #carouselcontainer-sn {
+    margin-top: 320px;
+  }
+
+  #carousel-sn {
+    width: 300%;
+    height: 257px;
+  }
+
+  .txt-carousel {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-left: 290px;
+  }
+
+  .txt1-sn {
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    margin-top: 18px;
+  }
+
+  .div-sn {
+    margin-top: -50px;
+  }
+
+  .subtitulo-sn {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  #sobre-nos .subtitulo-sn::before {
+    content: url(./img/BordaInferiorMOBILE.svg);
+    position: absolute;
+    left: -15px;
+    top: 40px;
+  }
+
+  #sobre-nos .subtitulo-sn::after {
+    content: url(./img/BordaSuperiorMOBILE.svg);
+    position: absolute;
+    top: -17px;
+    left: 240px;
+  }
+
+  .titulo-sn {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  #sobre-nos {
+    height: 640px;
+  }
+
+  .titulo-c {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  .btn-c {
+    width: 237px;
+    height: 47px;
+    border-radius: 20px;
+    margin-top: 300px;
+    margin-left: 130px;
+  }
+
+  .txt2-c {
+    font-size: 14px;
+    letter-spacing: 1.12px;
+  }
+
+  .subtitulo-c {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .txt-c {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    margin-top: 18px;
+  }
+
+  #conteudos .subtitulo-c::before {
+    content: url(./img/BordaInferiorMOBILE.svg);
+    position: absolute;
+    left: -15px;
+    top: 18px;
+  }
+
+  #conteudos .subtitulo-c::after {
+    content: url(./img/BordaSuperiorMOBILE.svg);
+    position: absolute;
+    top: -17px;
+    left: 290px;
+  }
+
+  .livro {
+    margin-top: 140px;
+    height: 227.422px;
+    left: 0;
+    margin-left: 70px;
+    align-self: center;
+  }
+
   .cards-ns {
     width: 275px;
     height: 360px;
@@ -1703,6 +1886,20 @@ img {
   }
 }
 
+@media (max-width: 1015px) {
+  .forms {
+    width: 650px;
+  }
+
+  .informacoes-ctt {
+    width: 100%;
+  }
+
+  #contato {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 660px) {
   .container-dif {
     column-gap: 18px;
@@ -1737,5 +1934,510 @@ img {
   .card-portf {
     width: 300px;
     height: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .horizontal-line {
+    display: none;
+  }
+
+  .footer-txt1 {
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .footer-txt2 {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  .footer-txt3 {
+    display: none;
+  }
+
+  .footer-txt4 {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    margin-top: 16px;
+    text-underline-offset: 4px;
+  }
+
+  .Fimg3 {
+    width: 51px;
+    height: 62px;
+  }
+
+  .footer-txt5 {
+    color: var(--Branco, #FFF);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 17px;
+  }
+
+  .footer2-mobile {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+    margin-left: 25px;
+  }
+
+  .footer-mobile {
+    display: flex;
+    padding-left: 50px;
+    text-align: left;
+    margin-top: 60px;
+    float: left;
+    box-sizing: border-box;
+  }
+
+  .colunaFooter {
+    display: none;
+  }
+
+  #footer {
+    height: 760px;
+  }
+
+  .forms {
+    width: 85%;
+    padding: 0;
+  }
+
+  #bt-form {
+    margin-bottom: 10px;
+  }
+
+  .inputtxt-form {
+    width: 75%;
+    margin-left: 10px;
+  }
+
+  .input-form {
+    width: 80%;
+    margin-left: 10px;
+  }
+
+  .txt-forms {
+    font-size: 19px;
+    padding-bottom: 22px;
+    margin-top: 22px;
+    margin-left: 38px;
+  }
+
+  .linha-ctt {
+    margin-bottom: 15px;
+  }
+
+  .titulo-ctt {
+    font-size: 16px;
+  }
+
+  .txt-ctt {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+
+  .subtitulo2-ctt {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .subtitulo-ctt {
+    font-size: 20px;
+  }
+
+  .subtitulo-ctt::before {
+    content: url(./img/BordaInferiorMOBILE.svg);
+    position: absolute;
+    left: -15px;
+    top: 20px;
+  }
+
+  .subtitulo-ctt::after {
+    content: url(./img/BordaSuperiorMOBILE.svg);
+    position: absolute;
+    top: -15px;
+  }
+
+  .informacoes-ctt {
+    width: 100%;
+    padding: 0;
+  }
+
+  #contato {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .txt-carousel {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-left: 290px;
+  }
+
+  #carousel-sn {
+    width: 300%;
+    height: 257px;
+  }
+
+  #carouselcontainer-sn {
+    margin-top: 445px;
+    position: relative;
+    margin-left: -600px;
+    left: 260px;
+  }
+
+  #sobre-nos {
+    height: 726px;
+    overflow: hidden;
+  }
+
+  .titulo-sn {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  .subtitulo-sn {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  #sobre-nos .subtitulo-sn::before {
+    content: url(./img/BordaInferiorMOBILE.svg);
+    position: absolute;
+    left: -15px;
+    top: 40px;
+  }
+
+  #sobre-nos .subtitulo-sn::after {
+    content: url(./img/BordaSuperiorMOBILE.svg);
+    position: absolute;
+    top: -17px;
+    left: 240px;
+  }
+
+  .txt1-sn {
+    position: absolute;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    margin-top: 70px;
+    display: flex;
+  }
+
+  .div-sn {
+    margin-top: -50px;
+    padding-left: 50px;
+  }
+
+  .btn-c {
+    width: 237px;
+    height: 47px;
+    border-radius: 20px;
+    margin-top: 300px;
+    margin-left: 30px;
+  }
+
+  .txt2-c {
+    font-size: 14px;
+    letter-spacing: 1.12px;
+  }
+
+  .div-c {
+    margin-left: -50px;
+    width: 360px;
+  }
+
+  .livro {
+    margin-top: 180px;
+    height: 227.422px;
+    margin-left: -90px;
+    left: 0;
+  }
+
+  .text-c {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .dif2-c {
+    text-underline-offset: 5px;
+  }
+
+  .txt-c {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    margin-top: 30px;
+    margin-left: -10px;
+  }
+
+  .titulo-c {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  .subtitulo-c {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 35px;
+  }
+
+  #conteudos .subtitulo-c::before {
+    content: url(./img/BordaInferiorMOBILE.svg);
+    position: absolute;
+    left: -15px;
+    top: 18px;
+  }
+
+  #conteudos .subtitulo-c::after {
+    content: url(./img/BordaSuperiorMOBILE.svg);
+    position: absolute;
+    top: -17px;
+    left: 280px;
+  }
+
+  #conteudos {
+    height: 555px;
+  }
+
+  .wrapper-dif {
+    justify-content: flex-start;
+  }
+
+  .container-dif {
+    column-gap: 18px;
+    padding-right: 30px;
+  }
+
+  .card-dif {
+    width: 275px;
+    height: 400px;
+  }
+
+  #diferenciais {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #diferenciais::before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .titulo-dif {
+    font-size: 16px;
+  }
+
+  .subtitulo-dif {
+    font-size: 20px;
+    width: 207px;
+  }
+
+  #portifolio {
+    height: auto;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  .carousel-container-ns {
+    overflow: hidden;
+    height: 500px;
+    width: 440px;
+    max-width: 800px;
+    align-self: center;
+    margin-top: 40px;
+    padding-right: 80px;
+  }
+
+  .s-icon {
+    position: absolute;
+    margin-top: 70px;
+  }
+
+  .txt1-ns {
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    position: absolute;
+    margin-bottom: 140px;
+
+  }
+
+  .SBotao {
+    position: relative;
+    height: 45px;
+    width: 300px;
+    max-width: 800px;
+    align-self: center;
+    margin-top: -25px;
+  }
+
+  .SBotao-txt {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.7px;
+  }
+
+  .txt4-ns {
+    font-size: 16px;
+    margin-bottom: 130px
+  }
+
+  .txt3-ns {
+    margin-top: 150px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .txt2-ns {
+    margin-top: -60px;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .txt2-ns::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #CFDD19;
+
+  }
+
+  .cards-ns {
+    width: 275px;
+    height: 360px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 1px 0px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.5s ease;
+    margin: 0;
+    position: relative;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    margin-left: 70px;
+    margin-right: 0;
+  }
+
+  .carousel-ns {
+    display: flex;
+    position: relative;
+  }
+
+  .container-Cards {
+    display: none;
+  }
+
+  .subtitulo-ns {
+    padding: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  #servicos .subtitulo-ns::before {
+    content: url(./img/BordaInferiorMOBILE.svg);
+    left: 30px;
+    top: 120px;
+    position: absolute;
+  }
+
+  #servicos .subtitulo-ns::after {
+    content: url(./img/BordaSuperiorMOBILE.svg);
+    position: absolute;
+    top: 60px;
+    left: 280px;
+  }
+
+  .titulo-ns {
+    font-size: 16px;
+    letter-spacing: 0.8px
+  }
+
+  .div-ns {
+    padding-left: 50px;
+  }
+
+  #servicos {
+    height: 628px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  #banner {
+    height: 680px;
+  }
+
+  .underlinedTxt {
+    text-underline-offset: 10px;
+    margin-right: 10px;
+    font-size: 36px;
+    line-height: 60px;
+    letter-spacing: 3.6px;
+  }
+
+  .unectBannerTxt {
+    text-align: center;
+    margin-top: -450px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .unectBanner {
+    height: 700px;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    background-color: #274AA3;
+    width: 100%;
+    margin-top: 397px;
+  }
+
+  .menu-mobile button {
+    cursor: pointer;
+    background: transparent;
+  }
+
+  .menu-mobile {
+    display: block;
+    margin-right: 53px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo-img {
+    width: 41px;
+    height: 55.263px;
+  }
+
+  .logo {
+    padding-left: 50px;
+  }
+
+  .header {
+    height: 80px;
+    position: 0;
+    width: 100%;
   }
 }
