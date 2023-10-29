@@ -1,3 +1,12 @@
+body {
+  overflow-x: hidden;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1926,7 +1935,7 @@ img {
   .container-portf {
     flex-flow: row nowrap;
     height: auto;
-    padding-right: 25px;
+    padding-right: 0;
   }
 }
 
@@ -2253,11 +2262,11 @@ img {
   .carousel-container-ns {
     overflow: hidden;
     height: 500px;
-    width: 440px;
+    width: 400px;
     max-width: 800px;
     align-self: center;
     margin-top: 40px;
-    padding-right: 80px;
+    padding-right: 0;
   }
 
   .s-icon {
