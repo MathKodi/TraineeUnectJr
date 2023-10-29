@@ -801,6 +801,7 @@ img {
   overflow-x: auto;
   z-index: 1;
   width: 1700px;
+  margin: 0;
 }
 
 .container-dif {
@@ -913,6 +914,7 @@ img {
 }
 
 .card-portf p {
+  margin: 0;
   font-family: ubuntu;
   font-size: 16px;
   font-style: normal;
@@ -1092,31 +1094,6 @@ img {
   margin-bottom: 180px;
 }
 
-.txt5-ns {
-  color: var(--unect-verde, #cfdd19);
-  font-family: Ubuntu;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 1.6px;
-  margin: 0 15px;
-  position: absolute;
-  margin-top: -80px;
-}
-
-.txt6-ns {
-  color: var(--unect-branco, #f2f3f4);
-  text-align: center;
-  font-family: Ubuntu;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 1px;
-  position: absolute;
-  margin-top: 220px;
-}
 
 .s-icon {
   position: absolute;
@@ -1410,7 +1387,7 @@ img {
   height: 50px;
   background-color: #226ed8;
   border-radius: 50%;
-  display: none;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -1449,12 +1426,6 @@ img {
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1600px) {
-  .container-Cards {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
   .cards-ns {
     width: 275px;
     height: 360px;
@@ -1473,14 +1444,179 @@ img {
   .carousel-container-ns {
     position: relative;
     height: 500px;
-    width: 800px;
+    width: 1000px;
+    align-self: center;
+    margin-top: -30px;
+  }
+
+  .container-Cards {
+    display: none;
+  }
+
+  .s-icon {
+    position: absolute;
+    margin-top: 70px;
+  }
+
+  .SBotao {
+    position: relative;
+    height: 45px;
+    width: 300px;
     max-width: 800px;
+    align-self: center;
+    margin-top: -25px;
+  }
+
+  .SBotao-txt {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.7px;
+  }
+
+  .txt4-ns {
+    font-size: 16px;
+    margin-bottom: 130px
+  }
+
+  .txt3-ns {
+    margin-top: 150px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .txt1-ns {
+    font-size: 16px;
+    margin-bottom: 140px;
+    letter-spacing: 1.6px;
+  }
+
+  .txt2-ns {
+    margin-top: -60px;
+    font-size: 14px;
+  }
+
+  .txt2-ns::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #CFDD19;
+  }
+
+  .titulo-ns {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+
+  .subtitulo-ns {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  #servicos .subtitulo-ns::before {
+    content: url(./img/BordaInferiorMOBILE.svg);
+    position: absolute;
+    left: 90px;
+    top: 120px;
+  }
+
+  #servicos .subtitulo-ns::after {
+    content: url(./img/BordaSuperiorMOBILE.svg);
+    position: absolute;
+    top: 65px;
+    left: 325px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .cards-ns {
+    width: 275px;
+    height: 360px;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    margin-right: 22px;
+    flex-shrink: 0;
+  }
+
+  .s-icon {
+    position: absolute;
+    margin-top: 70px;
+  }
+
+  .SBotao {
+    position: relative;
+    height: 45px;
+    width: 300px;
+    max-width: 800px;
+    align-self: center;
+    margin-top: -25px;
+  }
+
+  .SBotao-txt {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.7px;
+  }
+
+  .txt4-ns {
+    font-size: 16px;
+    margin-bottom: 130px
+  }
+
+  .txt3-ns {
+    margin-top: 150px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .txt2-ns {
+    margin-top: -60px;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .txt2-ns::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #CFDD19;
+
+  }
+
+  .txt1-ns {
+    font-size: 16px;
+    margin-bottom: 140px;
+    letter-spacing: 1.6px;
+  }
+
+  .carousel-ns {
+    display: flex;
+    position: relative;
+  }
+
+  .carousel-container-ns {
+    position: relative;
+    height: 500px;
+    width: 800px;
+    max-width: 720px;
     align-self: center;
     margin-top: -25px;
   }
 
   .header {
     height: 80px;
+
   }
 
   .unectBanner {
@@ -1515,6 +1651,10 @@ img {
     display: none;
   }
 
+  #servicos {
+    height: 600px;
+  }
+
   #banner {
     height: 700px;
   }
@@ -1545,5 +1685,57 @@ img {
     width: 41px;
     height: 55.263px;
     padding: 50px;
+  }
+
+  .wrapper-dif {
+    justify-content: flex-start;
+  }
+
+  .container-dif {
+    column-gap: 18px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 1290px) {
+  .wrapper-dif {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 660px) {
+  .container-dif {
+    column-gap: 18px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  #portifolio {
+    height: auto;
+    padding-bottom: 49px;
+  }
+
+  .btn-Expandir {
+    display: none;
+  }
+
+  .wraper-portf {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .container-portf {
+    flex-flow: row nowrap;
+    height: auto;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .card-portf {
+    width: 300px;
+    height: 150px;
   }
 }
